@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedidos - Cantina Fatec</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Cantina Fatec</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="cardapio.html">Cardápio</a>
+
+        <a href="pedidos.html">Pedidos</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="historico.html">Histórico</a>
+
+        <a
+        href="#"
+        id="btn-logout"
+        onclick="logout()">
+
+            Logout
+
+        </a>
+
+        <a
+        href="admin.html"
+        id="link-admin">
+
+            Admin
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="pedidos">
+
+    <h2>
+
+        Meus Pedidos
+
+    </h2>
+
+    <div
+    id="lista-pedidos"
+    class="lista-pedidos">
+
+    </div>
+
+
+
+    <!-- CHECKOUT -->
+
+    <div class="checkout-box">
+
+        <h2 class="titulo-checkout">
+
+            Finalizar Pedido
+
+        </h2>
+
+        <div class="resumo-checkout">
+
+            <span>Total</span>
+
+            <strong id="total">
+
+                R$ 0
+
+            </strong>
+
+        </div>
+        
+
+
+
+        <div class="pagamento-opcoes">
+
+            <label class="opcao-pagamento">
+
+                <input
+                type="radio"
+                name="pagamento"
+                value="PIX"
+                checked>
+
+                <span>PIX</span>
+
+            </label>
+
+
+
+            <label class="opcao-pagamento">
+
+                <input
+                type="radio"
+                name="pagamento"
+                value="Cartão">
+
+                <span>Cartão</span>
+
+            </label>
+
+
+
+            <label class="opcao-pagamento">
+
+                <input
+                type="radio"
+                name="pagamento"
+                value="Dinheiro">
+
+                <span>Dinheiro</span>
+
+            </label>
+
+        </div>
+
+
+
+        <button
+        class="btn-finalizar"
+        onclick="finalizarPedido()">
+
+            Finalizar Pedido
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<a
+href="pedidos.html"
+id="carrinho-info"
+class="carrinho-flutuante">
+
+🛒 0 itens • R$ 0
+
+</a>
+
+
+
+<script
+type="module"
+src="js/firebase.js">
+
+</script>
+
+<script
+type="module"
+src="js/script.js">
+
+</script>
+
+</body>
+</html>

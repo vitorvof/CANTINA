@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Histórico de Pedidos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+
+    <h1>Cantina Fatec</h1>
+
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="login.html">Login</a>
+            <a href="historico.html">Histórico</a>
+            <a href="#" onclick="logout()">Logout</a>
+
+        <a
+        href="admin.html"
+        id="link-admin">
+
+            Admin
+
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="pedidos">
+
+    <h2>Histórico de Pedidos</h2>
+
+   <div id="lista-historico"></div>
+
+</section>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>

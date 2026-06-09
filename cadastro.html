@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+
+        Cantina Fatec
+
+        <span id="usuario-logado"></span>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="cardapio.html">
+            Cardápio
+        </a>
+
+        <a href="login.html">
+            Login
+        </a>
+
+        <a
+        href="admin.html"
+        id="link-admin">
+
+            Admin
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="login">
+
+    <form class="formulario">
+
+    <h2>Criar Conta</h2>
+
+    <input
+    type="text"
+    id="nome"
+    placeholder="Nome">
+
+
+    <input
+    type="email"
+    id="email"
+    placeholder="Email">
+
+
+    <input
+    type="password"
+    id="senha"
+    placeholder="Senha">
+
+
+    <button
+    type="button"
+    onclick="cadastrarUsuario()">
+
+        Cadastrar
+
+    </button>
+
+</form>
+
+</section>
+
+
+<script type="module" src="js/firebase.js"></script>
+
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>

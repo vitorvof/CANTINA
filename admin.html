@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Admin</title>
+
+    <link
+    rel="stylesheet"
+    href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        Cantina Fatec
+
+        <span id="usuario-logado"></span>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="cardapio.html">
+            Cardápio
+        </a>
+
+        <a href="pedidos.html">
+            Pedidos
+        </a>
+
+        <a href="historico.html">
+            Histórico
+        </a>
+
+        <a
+        href="admin.html"
+        id="link-admin">
+
+            Admin
+
+        </a>
+
+        <a
+        href="#"
+        class="logout-btn"
+        onclick="logout()">
+
+            Logout
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- PAINEL -->
+
+<section class="painel-admin">
+
+
+
+    <!-- TOPO -->
+
+    <div class="topo-admin">
+
+        <h1>
+
+            Painel Admin
+
+        </h1>
+
+        <p>
+
+            Gerencie pedidos e produtos da cantina
+
+        </p>
+
+    </div>
+
+
+
+    <!-- RESUMO -->
+
+    <div class="resumo-admin">
+
+        <div class="box-resumo">
+
+            <h3>🟡 Em preparo</h3>
+
+            <span id="contador-preparo">
+
+                0
+
+            </span>
+
+        </div>
+
+
+
+        <div class="box-resumo">
+
+            <h3>🟠 Prontos</h3>
+
+            <span id="contador-prontos">
+
+                0
+
+            </span>
+
+        </div>
+
+
+
+        <div class="box-resumo">
+
+            <h3>🟢 Finalizados</h3>
+
+            <span id="contador-finalizados">
+
+                0
+
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- GRID -->
+
+    <div class="admin-grid">
+
+
+
+        <!-- PEDIDOS -->
+
+        <div class="coluna-admin">
+
+
+
+            <!-- PEDIDOS ATIVOS -->
+
+            <div class="secao-admin">
+
+                <h2>
+
+                    Pedidos Ativos
+
+                </h2>
+
+                <div
+                id="lista-admin"
+                class="lista-pedidos">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PEDIDOS FINALIZADOS -->
+
+            <div class="secao-admin">
+
+                <h2>
+
+                    Pedidos Finalizados
+
+                </h2>
+
+                <div
+                id="lista-finalizados"
+                class="lista-pedidos">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CADASTRAR PRODUTO -->
+
+        <div class="coluna-admin-lateral">
+
+            <div class="card-cadastro">
+
+                <h2>
+
+                    Novo Produto
+
+                </h2>
+
+                <p>
+
+                    Adicione novos itens ao cardápio
+
+                </p>
+
+
+
+                <form class="formulario-admin">
+
+
+
+                    <input
+                    type="text"
+                    id="produto-nome"
+                    placeholder="Nome do produto">
+
+
+
+                    <input
+                    type="number"
+                    id="produto-preco"
+                    placeholder="Preço">
+
+
+
+                    <input
+                    type="text"
+                    id="produto-imagem"
+                    placeholder="URL da imagem">
+
+
+
+                    <textarea
+                    id="produto-descricao"
+                    placeholder="Descrição do produto"></textarea>
+
+
+
+                    <button
+                    type="button"
+                    onclick="cadastrarProduto()">
+
+                        Cadastrar Produto
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ 
+<!-- USUÁRIOS -->
+
+<div class="secao-admin">
+
+    <h2>
+
+        Usuários
+
+    </h2>
+
+    <div
+    id="lista-usuarios"
+    class="lista-pedidos">
+
+    </div>
+
+</div>
+
+
+<script
+type="module"
+src="js/firebase.js">
+
+</script>
+
+<script
+type="module"
+src="js/script.js">
+
+</script>
+
+</body>
+
+</html>

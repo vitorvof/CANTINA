@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina Fatec</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+
+       <div class="logo">
+
+    Cantina Fatec
+
+    <span id="usuario-logado"></span>
+
+</div>
+
+        <nav>
+            <a href="index.html"> Home</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="login.html">Login</a>
+            <a href="historico.html">Histórico</a>
+            <a href="#" id="btn-logout" onclick="logout()"> Logout </a>
+            <a href="admin.html" id="link-admin"> Admin </a>
+           
+
+    </nav>
+
+    </header>
+
+
+
+    <section class="banner">
+
+        <div class="banner-text">
+
+            <h1>Peça seu lanche online</h1>
+
+            <p>
+                Rápido, moderno e sem filas.
+            </p>
+
+            <button>
+                Fazer Pedido
+            </button>
+
+        </div>
+
+    </section>
+
+
+    
+<a
+href="pedidos.html"
+id="carrinho-info"
+class="carrinho-flutuante">
+
+🛒 0 itens • R$ 0
+
+</a>
+
+
+
+<script type="module" src="js/firebase.js"></script>
+
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>
